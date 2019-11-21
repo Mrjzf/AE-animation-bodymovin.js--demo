@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bodymovin Demo</title>
+    <script src="./bodymovin.js"></script>
+</head>
+
+<body>
+    <div id="animation" style="width:128px;height:128px"></div>
+    <script>
+        bodymovin.loadAnimation({
+            path: './cstvdate.json', //json文件路径
+            loop: true,
+            autoplay: true,
+            renderer: 'canvas', //渲染方式，有"html"、"canvas"和"svg"三种
+            container: document.getElementById('animation')
+        });
+        //bodymovin.js的完整api文档见GitHub项目首页(https://github.com/bodymovin/bodymovin)
+    </script>
+</body>
+
+</html>
